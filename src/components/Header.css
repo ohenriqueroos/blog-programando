@@ -1,0 +1,44 @@
+.container-header {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-title h1 {
+  filter: brightness(0) invert(1);
+  margin-top: -1rem;
+  animation: colorCycle 10s ease-in-out infinite;
+  text-align: center;
+}
+
+.container-title h1:nth-child(2) {
+  animation-delay: 3.33s;
+}
+
+.container-title h1:nth-child(3) {
+  animation-delay: 6.66s;
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, rgba(44,36,194,1) 0%, rgba(70,216,197,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes colorCycle {
+  0%, 55% {
+    filter: brightness(0) invert(1);
+  }
+  11%, 33% {
+    filter: none;
+  }
+}
