@@ -2,6 +2,7 @@ import React from 'react';
 import './TopNews.css';
 
 import Card from './Card';
+import Cards from './Cards';
 
 const TopNews = () => {
   return ( 
@@ -9,6 +10,7 @@ const TopNews = () => {
       <h3>Notícias em destaque</h3>
       <div className="content-cards">
         <Card />
+        <Cards />
       </div>
     </div>
    );

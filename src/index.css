@@ -5,6 +5,8 @@
 }
 
 :root {
+  --primary-color: #2c24c2;
+  --secondary-color: #46d8c5;
   --paragraph-color: #cccccc;
   --text-color: #fff;
   --background-color: #000;
@@ -39,4 +41,28 @@ h3 {
 h5 {
   font-size: 1.6rem;
   color: var(--text-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn-primary {
+  width: 8rem;
+  height: 2rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-weight: 700;
+  border: none;
+  border-radius: .5rem;
+  transition: all .2s ease;
+}
+
+.btn-primary:hover {
+  width: 10rem;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  font-weight: 500;
+  border-radius: 1rem;
 }

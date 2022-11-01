@@ -11,8 +11,11 @@ const Card = () => {
         <img src={Exemple} alt="" />
       </div>
       <div className="card-description">
-        <h4>Principal Notícia</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore unde nobis soluta tenetur modi laudantium accusamus quia, reprehenderit ut aut numquam inventore optio nisi quae alias fugit, illum sed.</p>
+        <h4>Notícia Principal</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore unde nobis soluta tenetur modi laudantium accusamus quia, reprehenderit ut aut.</p>
+      </div>
+      <div className="access-news">
+        <button className="btn-primary">Acessar Notícia</button>
       </div>
     </div>
    );
