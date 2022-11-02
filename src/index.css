@@ -7,62 +7,76 @@
 :root {
   --primary-color: #2c24c2;
   --secondary-color: #46d8c5;
-  --paragraph-color: #cccccc;
-  --text-color: #fff;
-  --background-color: #000;
-  --card-background: #1f1f1f;
+  --light-color: #fff;
+  --dark-color: #000;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-color);
+  background-color: var(--dark-color);
 }
 
 h1 {
   font-size: 7rem;
   font-weight: 900;
-  color: var(--text-color);
+  color: var(--light-color);
   letter-spacing: -3.5px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--light-color);
 }
 
-h3 {
+h4 {
   font-size: 1.2rem;
-  color: (--text-color);
+  font-weight: 500;
+  color: var(--dark-color);
 }
 
 h5 {
   font-size: 1.6rem;
-  color: var(--text-color);
+  font-weight: 900;
+  color: var(--dark-color);
 }
 
 button {
+  padding-inline: 1rem;
+  width: fit-content;
+  height: 1.8rem;
+  background-color: transparent;
+  border: 1.8px solid var(--dark-color);
+  border-radius: .5rem;
   cursor: pointer;
+  transition: all .2s ease;
+}
+
+button:hover {
+  padding-inline: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
 /* Buttons */
-.btn-primary {
-  width: 8rem;
-  height: 2rem;
+.btn-secondary {
+  width: 6rem;
+  height: 1.8rem;
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: var(--light-color);
+  font-size: 1rem;
   font-weight: 700;
   border: none;
   border-radius: .5rem;
   transition: all .2s ease;
 }
 
-.btn-primary:hover {
-  width: 10rem;
+.btn-secondary:hover {
+  width: 7rem;
   background-color: var(--secondary-color);
-  color: var(--background-color);
-  font-weight: 500;
+  color: var(--dark-color);
   border-radius: 1rem;
 }

@@ -1,6 +1,12 @@
 .container {
-  padding-block: 1rem;
+  padding: 1rem 10rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  background-color: var(--light-color);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
 }
